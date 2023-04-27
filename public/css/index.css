@@ -34,12 +34,9 @@ h1 {
 }
 
 /*Завдання 7. Задайте класу brown коричневий фон та білий колір тексту, використовуйте селектор класу*/
-.section.brown {
-    background: brown;
-}
-
-.brown {
+section.brown {
     color: white;
+    background: brown;
 }
 
 /*Завдання 8. Зробіть червоний фон для дочірніх елементів тега ul*/
@@ -53,7 +50,7 @@ button+span {
 }
 
 /*Завдання 10. Зробіть синій фон для всіх cусідських тегів <p>, тегу який має клас 'susid' , а текст білим застосувавши сусідський селектор*/
-susid~p {
+.susid~p {
     background: blue;
     color: white;
 }
@@ -72,12 +69,12 @@ susid~p {
 }
 
 /*Завдання №2:  Змінити колір тексту першого елемента списку в першому блоці ul на жовтий */
-.second-task ul:first-child {
+.second-task ul:first-child li:first-child {
     color: yellow;
 }
 
 /*Завдання №3:   Змінити фон першого елементу на жовтий в другому блоку ul*/
-.third-task ul:first-child {
+.third-task ul:last-child li:first-child {
     background: yellow;
 }
 
@@ -87,12 +84,12 @@ susid~p {
 }
 
 /*Завдання №5: Змінити колір тексту останнього елемента списку в останньому блоці ul на білий*/
-.five-task li:last-child {
+.five-task ul:last-child li:last-child {
     color: white;
 }
 
 /*Завдання №6: Змінити колір тексту на червоний у блоках div, які єдині в своєму батьківському елементі section*/
-.six-task div:only-child {
+div:only-child {
     color: red;
 }
 
@@ -143,8 +140,8 @@ susid~p {
 /*Завдання №6.  Застосуйте cелектор початку значення атрибута, щоб стилізувати тільки ті елементи списку,
 класи яких починаються на "b" та встановіть для них зелений колір тексту та білий фон*/
 .lesson-three-task-six li[class^='b'] {
-    background: green;
-    color: white;
+    color: green;
+    background: white;
 }
 
 /*Завдання №7. Застосуйте селектор кореня значення атрибута, щоб стилізувати тільки ті елементи списку,
@@ -157,7 +154,7 @@ susid~p {
 /*Завдання №8. Напишіть CSS-код, який за допомогою конструкції селектор кінцівки значення атрибута виділить червоним фоном елементи ,
 які мають в кінці назви класу літеру "s"*/
 .lesson-three-task-eight span[class$=s] {
-    background: red;
+    background: blue;
 }
 
 /*Завдання №9. Зробіть першу букву заголовків червоним кольором.
