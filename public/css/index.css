@@ -165,8 +165,8 @@ div:only-child {
 
 /*Завдання №10. Задайте першому рядку жовтий фон.
   Використовуйте селектор псевдоелементу першого рядка*/
-.lesson-three-task-ten p::first-line {
-    background: red;
+.lesson-three-task-ten::first-line {
+    background: yellow;
 }
 
 /*Завдання №11. Задайте червоний фон плейсхолдера для інпут-поля.
