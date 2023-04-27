@@ -89,7 +89,7 @@ button+span {
 }
 
 /*Завдання №6: Змінити колір тексту на червоний у блоках div, які єдині в своєму батьківському елементі section*/
-div:only-child {
+.only-child-task div:only-child {
     color: red;
 }
 
